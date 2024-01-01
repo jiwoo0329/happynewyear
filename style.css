@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'YClover-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'YClover-Bold';
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #3144a3;
+}
+.top_layout{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 300px;
+}
+.snowTree1{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-image: url('./images/snowTree01.png');
+    transform: scaleX(-1);
+    background-repeat: no-repeat;
+    background-size: 370px;
+    width: 370px;
+    height: 270px;
+    z-index: 2;
+}
+.snowTree2{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-image: url('./images/snowTree02.png');
+    background-repeat: no-repeat;
+    background-size: 270px;
+    width: 270px;
+    height: 170px;
+    z-index: 2;
+}
+
+.middle_layout{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.middle_layout h1{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    text-shadow: -3.5px 0 #3144a3, 0 3.5px #3144a3, 3.5px 0 #3144a3, 0 -3.5px #3144a3;
+    z-index: 1;
+}
+.middle_layout h1 span{
+    font-size: 7rem;
+}
+
+.lightsource {
+	width: 800px;
+	height: 800px;
+	/* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+	background: #fff983;
+	border-radius: 400px;
+    filter: blur(2px);
+	animation: lightsource 2s infinite;
+}
+
+@keyframes lightsource {
+	0%   {box-shadow: 0 0 100px #fff6b5;}
+	50%  {box-shadow: 0 0 100px #fbe543;}
+	100% {box-shadow: 0 0 100px #fff6b5;}
+}
+
+
+
+
+.footer_layout{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #9C7959;
+    width: 100%;
+    height: 250px;
+}
+.footer_layout_wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.damzhang{
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    background-image: url('./images/damzhang.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 180px;
+    z-index: 1;
+}
+.people{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url('./images/people.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 840px;
+    width: 100%;
+    height: 540px;
+    z-index: 2;
+}
